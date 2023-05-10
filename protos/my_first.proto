@@ -1,0 +1,18 @@
+// I suggest you install the proto related extension module in vscode first.
+// If you install this module, you can see the hint color on your texts.
+
+syntax = "proto3";
+
+package tensorflow.serving;
+
+service PredictionService {
+  rpc Predict(PredictRequest) returns (PredictResponse) {}
+}
+
+message PredictRequest {
+  repeated bytes inputs = 1;
+}
+
+message PredictResponse {
+  repeated bytes outputs = 1;
+}
