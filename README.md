@@ -1,0 +1,1 @@
+# tensorflow_serving_with_gRPC_for_MNIST_prediction
